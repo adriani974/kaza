@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.scss';
 import Home from './pages/Home';
-import Second from './pages/Second';
+import Propos from './pages/Propos';
+import Logement from './pages/Logement';
+import Error from './pages/Error';
 import Header from './components/Header';
-import Error from './components/Error';
+import Footer from './components/Footer';
+
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -15,9 +18,11 @@ root.render(
       <Header/> 
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/second/:questionNumber" element={<Second />}/>
+        <Route path="/propos/:questionNumber" element={<Propos />}/>
+        <Route path="/logement/:questionNumber" element={<Logement />}/>
         <Route path="*" element={<Error />}/>
-      </Routes>  
+      </Routes>
+      <Footer/> 
     </BrowserRouter> 
   </React.StrictMode>
 );
