@@ -1,0 +1,40 @@
+.Dropdown{
+width: 300px;
+display: flex;
+flex-direction: column;
+}
+
+.Dropdown-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+    margin: 20px 0px 10px 20px;
+    color: #FF6060;
+}
+
+.Dropdown-label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+    margin: 5px 0px 5px 20px;
+    color: #FFFFFF;
+}
+
+.Dropdown-icon{
+    margin-right: 20px;
+}
+
+.Dropdown-container{
+    background: #FF6060;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.Dropdown-container-text{
+    position: relative;
+    bottom: 3px;
+    background: #F7F7F7;
+}
+

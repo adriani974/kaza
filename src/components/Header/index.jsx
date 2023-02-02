@@ -18,11 +18,11 @@ function Header() {
             
             <nav className='Header-nav'>
                 <Link className='Header-nav-acceuil' to="/">Accueil</Link>
-                <Link className='Header-nav-propos' to="/propos/42">A propos</Link>
+                <Link className='Header-nav-propos' to="/propos">A propos</Link>
             </nav>
         </div>
         
     )
 }
 
-export default Header
+export default Header;

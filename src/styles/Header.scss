@@ -1,13 +1,15 @@
 .Header{
 /* _Header */
 position: relative;
-width: 100%;
+width: auto;
 height: 68px;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
 justify-content: space-between;
+margin-left: 32px;
+margin-right: 32px;
 }
 
 .Header-nav{
@@ -35,6 +37,7 @@ align-items: flex-end;
 text-align: right;
 margin-left: 20px;
 color: #FF6060;
+text-decoration: none;
 }
 
 .Header-nav-acceuil{
@@ -51,6 +54,7 @@ line-height: 142.6%;
 display: flex;
 align-items: flex-start;
 text-align: right;
+text-decoration: none;
 
 color: #FF6060;
 }
