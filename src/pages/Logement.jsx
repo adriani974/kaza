@@ -1,11 +1,16 @@
-import { useParams } from "react-router-dom";
+//import { useParams } from "react-router-dom";
+import '../styles/Logement.scss';
+import Carrousel from "../components/Carrousel";
+
 
 function Logement() {
-    const { questionNumber } = useParams()
+    //const { id } = useParams()
     return (
-        <div>
-            <h1>Questionnaire logement 🧮</h1>
-            <h2>Question n° { questionNumber }</h2>
+        <div className="Logement">
+            <Carrousel/>
+            <div className="Logement-container">
+
+            </div>
         </div>
     )
 }

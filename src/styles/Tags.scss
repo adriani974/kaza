@@ -1,18 +1,21 @@
 .Tags{
-background: #FF6060;
-border-radius: 10px;
+background: #ff60602c;
+
 width: fit-content;
+display: flex;
+justify-content: flex-start;
 }
 
 .Tags-text{
+    background: #FF6060;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 142.6%;
     /* identical to box height, or 20px */
-    margin-left: 20px;
-    margin-right: 20px;
-    
+    margin: 10px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 10px;
     color: #FFFFFF;
 }

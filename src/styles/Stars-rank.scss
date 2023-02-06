@@ -1,0 +1,18 @@
+.Stars-rank{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content ;
+    background: #ff60602c;
+}
+
+.Stars-one, .Stars-two, .Stars-three, .Stars-four{
+   margin-left: 8px; 
+   margin-top: 8px;
+   margin-bottom: 8px;
+}
+
+ .Stars-five{
+    margin-left: 8px; 
+    margin-right: 8px;
+ }

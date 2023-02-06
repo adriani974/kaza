@@ -1,4 +1,4 @@
-import '../../styles/banner.scss';
+import '../../styles/Banner.scss';
 import img_propos from '../../assets/propos.png';
 import img_acceuil from '../../assets/acceuil.png';
 var image = null;
