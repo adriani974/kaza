@@ -17,10 +17,11 @@ root.render(
     <BrowserRouter>
       <Header/> 
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/propos" element={<Logement />}/>
-        <Route path="/logement/:id" element={<Propos />}/>
+        <Route exact path="/" element={<Home />}/>
+        <Route exact path="/propos" element={<Propos />}/>
+        <Route exact path="/logement/:id" element={<Logement />}/>
         <Route path="*" element={<Error />}/>
+        <Route path="/error" element={<Error />}/>
       </Routes>
       <Footer/> 
     </BrowserRouter> 

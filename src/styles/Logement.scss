@@ -1,8 +1,121 @@
 .Logement{
-    width: 100%;
+    width: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: yellow;
     align-items: center;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.Logement-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.Logement-up-part{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+////////////////////////////////////////////////////////////////////////////
+.Logement-left-part{
+    width: 50%;
+}
+
+.Logement-left-part-title{
+    margin: 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.Logement-left-part-location{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+    margin: 0px;
+}
+
+.Logement-down-part-description{
+    width: 50%;
+}
+
+///////////////////////////////////////////////////////////////////////////////::
+.Logement-right-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.Logement-right-part-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.Logement-right-part-up{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 100%;
+}
+
+.Logement-right-part-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.Logement-right-part-profile-img{
+    border-radius: 100%;
+    height: 64px;
+    width: 64px;
+}
+
+.Logement-right-part-profile-txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+    margin: 0px;
+    text-align: right;
+}
+
+.Logement-right-part-profile-fullName{
+    margin-right: 10px;
+}
+
+.Logement-right-part-location{
+    align-self: flex-end;
+}
+
+.Logement-down-part-equipement{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.Logement-down-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
