@@ -5,6 +5,7 @@ function Card(props) {
     return (
         <Link className='Card' to={'logement/'+props.link} > 
             <div className='Card-img'> 
+                <img src={props.cover} alt='représente le logement à louer' className='Card-img-size'/>
                 <p className='Card-text'>{props.title}</p>
             </div>
         </Link>  

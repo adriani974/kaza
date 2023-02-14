@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import '../styles/Logement.scss';
 import Carrousel from "../components/Carrousel";
 import { useState, useEffect } from 'react';
@@ -46,6 +46,9 @@ function Logement() {
     var [refUrl, setRefUrl] = useState("../assets/host.png");
     var [description, setDescription] = useState("descriptions");
     var [equipements, setEquipements] = useState("equipements");
+    var [picturesList, setPicturesList] = useState([]);
+    const navigate = useNavigate();
+
     useEffect(()=>{
         setCardId(id);
     
@@ -71,16 +74,17 @@ function Logement() {
                 equipement_texte = equipement_texte + element + ' \n ' ;
             });
             setEquipements(equipement_texte);
-            //console.log("data => "+equipement_texte);
+            setPicturesList(logement[0].pictures)
+           
         }else{
-            console.log("pas ok ");
+            navigate('/error');  
         }
         
-    }, [id, cardId]);
+    }, [id, cardId, navigate]);
    
     return (
         <div className="Logement">
-            <Carrousel/>
+            <Carrousel lists={picturesList}/>
             <div className="Logement-container">
                 <div className="Logement-up-part">
                     <div className="Logement-left-part">

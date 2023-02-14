@@ -1,30 +1,43 @@
+@import './variables';
+@import './placeholders';
+
 .Carrousel{
     width: 100%;
-    height: fit-content;
-    position: relative;
+    height: 350px;
+    position: relative;  
 }
 
 .Carrousel-image{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: $x-radius;
 }
 
 .Carrousel-left-arrow{
     transform: rotate(90deg);
     height: 50px;
     width: 50px;
+    object-fit: cover;
 }
 .Carrousel-right-arrow{
     height: 50px;
     width: 50px;
+    object-fit: cover;
     transform: rotate(270deg);
 }
+
+.Carrousel-count{
+    @extend %police;
+    font-size: $normal-size;
+    align-self: flex-end;
+    color: white;
+}
+
 .Carrousel-container{
     position: absolute;
     height: 100%;
-    width: 100%;
-    
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;

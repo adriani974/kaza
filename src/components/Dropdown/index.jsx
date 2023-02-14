@@ -7,8 +7,8 @@ function Dropdown(props) {
     const [open, setOpen] = useState(false);
     const dropdown = () =>{
         setOpen(!open);
-        console.log("open -> "+open);
     }
+    
     return (
         <div className='Dropdown' > 
             <div className='Dropdown-container'>

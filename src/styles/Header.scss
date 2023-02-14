@@ -1,60 +1,52 @@
-.Header{
-/* _Header */
-position: relative;
-width: auto;
-height: 68px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-justify-content: space-between;
-margin-left: 32px;
-margin-right: 32px;
+@import './variables';
+@import './placeholders';
+
+.Header {
+    /* _Header */
+    position: relative;
+    width: auto;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
-.Header-nav{
-/* _Nav */
-position: relative;
-width: fit-content;
-height: 34px;
-display: flex;
-flex-direction: row;
+.Header-nav {
+    /* _Nav */
+    position: relative;
+    width: fit-content;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
 }
 
-.Header-nav-propos{
-/* A Propos */
-position: relative;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
-
-display: flex;
-align-items: flex-end;
-text-align: right;
-margin-left: 20px;
-color: #FF6060;
-text-decoration: none;
+.Header-nav-propos {
+    /* A Propos */
+    position: relative;
+    @extend %police;
+    font-size: $x-normal-size;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: 20px;
+    color: $primary-color;
+    text-decoration: none;
 }
 
-.Header-nav-acceuil{
-/* Accueil */
-position: relative;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
-
-display: flex;
-align-items: flex-start;
-text-align: right;
-text-decoration: none;
-
-color: #FF6060;
+.Header-nav-acceuil {
+    /* Accueil */
+    position: relative;
+    @extend %police;
+    font-size: $x-normal-size;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-start;
+    text-align: right;
+    text-decoration: none;
+    color: $primary-color;
 }

@@ -1,19 +1,19 @@
+@import './variables';
+@import './placeholders';
+
 .Tags{
-width: fit-content;
-display: flex;
-justify-content: flex-start;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .Tags-text{
-    background: #FF6060;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+    background: $primary-color;
+    @extend %police;
+    font-size: $x-small-size;
     line-height: 142.6%;
-    /* identical to box height, or 20px */
     margin: 10px 10px 10px 0px;
-    padding: 4px 8px 4px 8px;
-    border-radius: 10px;
+    padding: 4px 10px 4px 10px;
+    border-radius: $radius;
     color: #FFFFFF;
 }
