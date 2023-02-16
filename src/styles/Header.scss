@@ -6,10 +6,8 @@
     position: relative;
     width: auto;
     height: 68px;
-    display: flex;
+    @extend %flexbox_center;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     justify-content: space-between;
     margin-left: 32px;
     margin-right: 32px;
@@ -28,7 +26,7 @@
     /* A Propos */
     position: relative;
     @extend %police;
-    font-size: $x-normal-size;
+    font-size: $medium-size;
     line-height: 142.6%;
     display: flex;
     align-items: flex-end;
@@ -36,17 +34,23 @@
     margin-left: 20px;
     color: $primary-color;
     text-decoration: none;
+    @media screen and (max-width: 768px){
+        font-size: $normal-size;
+    }
 }
 
 .Header-nav-acceuil {
     /* Accueil */
     position: relative;
     @extend %police;
-    font-size: $x-normal-size;
+    font-size: $medium-size;
     line-height: 142.6%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     text-align: right;
     text-decoration: none;
     color: $primary-color;
+    @media screen and (max-width: 768px){
+        font-size: $normal-size;
+    }
 }

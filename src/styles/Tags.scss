@@ -10,10 +10,13 @@
 .Tags-text{
     background: $primary-color;
     @extend %police;
-    font-size: $x-small-size;
+    font-size: $very-small-size;
     line-height: 142.6%;
     margin: 10px 10px 10px 0px;
     padding: 4px 10px 4px 10px;
-    border-radius: $radius;
+    border-radius: $normal-radius;
     color: #FFFFFF;
+    @media screen and (max-width: 768px){
+        font-size: $very-small-size - 2px;
+     }
 }

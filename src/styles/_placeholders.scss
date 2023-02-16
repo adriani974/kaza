@@ -1,5 +1,18 @@
+//--!--<< font >>--!--//
 %police{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
+}
+
+%arrow{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+%flexbox_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

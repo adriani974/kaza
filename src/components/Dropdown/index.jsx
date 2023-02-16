@@ -1,8 +1,13 @@
 import '../../styles/Dropdown.scss';
 import logo from '../../assets/arrow_back_ios-24px 2.png';
-import { useState } from "react"
+import { useState } from "react";
 
-
+/**
+ * Un composant déroulant contenant du texte.
+ * @param {*} props.title Nom du composant déroulant. 
+ * @param {*} props.text Texte contenue par le composant déroulant. 
+ * @returns 
+ */
 function Dropdown(props) {
     const [open, setOpen] = useState(false);
     const dropdown = () =>{

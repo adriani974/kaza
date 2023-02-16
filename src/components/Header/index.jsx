@@ -1,16 +1,12 @@
 import '../../styles/Header.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo-kaza-1.png';
-//import styled from 'styled-components'
 
-/*
-const StyledLink = styled(Link)`
-    padding: 15px;
-    color: #8186a0;
-    text-decoration: none;
-    font-size: 18px;
-`*/
-
+/**
+ * 
+ * Composant correspondant au header du site, contenant la navigation.
+ * @returns 
+ */
 function Header() {
     return (
         <div className='Header'>  

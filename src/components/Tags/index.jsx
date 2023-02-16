@@ -6,7 +6,11 @@ const tag = (list) => {
   return autre;
 }
 
-
+/**
+ * Affiche une liste de tags.
+ * @param {*} props.list liste de tags à afficher. 
+ * @returns 
+ */
 function Tags(props) {
     return (
         <div className='Tags'>  

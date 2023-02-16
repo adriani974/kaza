@@ -7,6 +7,19 @@
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 10px;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+}
+
+.Dropdown-label{
+    @extend %police;
+    font-size: $normal-size;
+    margin: 5px 0px 5px 20px;
+    color: white;
+    @media screen and (max-width: 768px){
+        font-size: $small-size;
+    }
 }
 
 .Dropdown-text{
@@ -16,13 +29,10 @@
     color: $primary-color;
     text-align: left;
     white-space: pre-line;
-}
-
-.Dropdown-label{
-    @extend %police;
-    font-size: $normal-size;
-    margin: 5px 0px 5px 20px;
-    color: #FFFFFF;
+    @media screen and (max-width: 768px){
+        font-size: $small-size;
+    }
+    
 }
 
 .Dropdown-icon{
@@ -34,7 +44,7 @@
 
 .Dropdown-container{
     background: $primary-color;
-    border-radius: $radius;
+    border-radius: $normal-radius;
     display: flex;
     justify-content: space-between;
     z-index: 1;

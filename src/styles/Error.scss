@@ -4,62 +4,60 @@
 .Error {
     width: 100%;
     min-height: 100vh;
-    display: flex;
+    @extend %flexbox_center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #FFFFFF;
+    @media screen and (max-width: 768px){
+       margin: 120px 0px 60px 0px;
+    }
 }
 
 .Error-div-text-404 {
     width: fit-content;
     height: 100%;
     position: relative;
-    display: flex;
+    @extend %flexbox_center;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .Error-text-404 {
     @extend %police;
-    font-size: $x-large-size;
+    font-size: $very-large-size;
     line-height: 142.6%;
     display: flex;
     align-items: center;
     text-align: center;
     margin: 0px;
     color: $primary-color;
+    @media screen and (max-width: 768px){
+        font-size: $very-large-size - 100px;
+    }
 }
 
 .Error-text-existe-pas {
     position: relative;
-    display: flex;
+    @extend %flexbox_center;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     @extend %police;
     font-size: 36px;
     line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
     margin: 0px 0px 20px 0px;
     color: $primary-color;
+    @media screen and (max-width: 768px){
+        font-size: $medium-size;
+        text-align: center;
+        white-space: pre-line;
+    }
 }
 
 .Error-text-retour-accueil {
     /* Retourner sur la page d’accueil */
     position: relative;
-    display: flex;
+    @extend %flexbox_center;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     @extend %police;
     font-size: $normal-size;
     line-height: 142.6%;
-    /* identical to box height, or 26px */
-    display: flex;
-    align-items: flex-end;
     text-decoration-line: underline;
     margin: 120px 0px 120px 0px;
     color: $primary-color;

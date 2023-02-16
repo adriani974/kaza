@@ -10,7 +10,15 @@ var reference = (state) =>{
         return star_empty; 
     }
 }
-
+/**
+ * Représente une notation sur cuinq sous forme d'étoile.
+ * @param {*} props.one la première étoile peut être afficher par true sinon ne s'affiche pas avec false. 
+ * @param {*} props.two la deuxième étoile peut être afficher par true sinon ne s'affiche pas avec false. 
+ * @param {*} props.three la troisième étoile peut être afficher par true sinon ne s'affiche pas avec false. 
+ * @param {*} props.four la quatrième étoile peut être afficher par true sinon ne s'affiche pas avec false. 
+ * @param {*} props.five la cuinqième étoile peut être afficher par true sinon ne s'affiche pas avec false. 
+ * @returns 
+ */
 function Stars_rank(props) {
    
     return (

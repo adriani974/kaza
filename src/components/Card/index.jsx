@@ -1,6 +1,13 @@
 import '../../styles/Card.scss';
 import { Link } from 'react-router-dom';
 
+/**
+ * Affiche une carte avec l'image et le nom du logement.
+ * @param { * } props.link  L'identifiant du logement.
+ * @param { * } props.cover L'image du logement.
+ * @param { * } props.title Le nom du logement.
+ * @returns 
+ */
 function Card(props) {
     return (
         <Link className='Card' to={'logement/'+props.link} > 
@@ -11,5 +18,5 @@ function Card(props) {
         </Link>  
     )
 }
-<Link className='Header-nav-propos' to="/propos">A propos</Link>
+
 export default Card

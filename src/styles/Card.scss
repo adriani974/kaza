@@ -2,7 +2,7 @@
 @import './placeholders';
 
 .Card {
-    border-radius: $radius;
+    border-radius: $normal-radius;
     width: 240px;
     height: 240px;
     display: flex;
@@ -10,6 +10,11 @@
     background: $primary-color;
     margin: 6px;
     text-decoration: none;
+    @media screen and (max-width: 768px){
+        width: 100%;
+        height: 260px;
+        margin: 15px 0px 0px 0px;
+    }
 }
 
 .Card-text {
@@ -18,20 +23,28 @@
     line-height: 142.6%;
     height: 30%;
     margin: 5px;
-    color: #FFFFFF;
+    color: white;
+    
+    @media screen and (max-width: 768px){
+        margin: 20px;
+        height: fit-content;
+    }
+    
 }
 
 .Card-img {
-    background: linear-gradient(180deg, rgba(255, 96, 96, 1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: $primary-color;
     width: 100%;
     height: 97%;
-    border-radius: $radius;
+    border-radius: $normal-radius;
 }
 
 .Card-img-size {
     width: 95%;
     height: 70%;
-    border-radius: $radius;
+    border-radius: $normal-radius;
     object-fit: cover;
-
+    @media screen and (max-width: 768px){
+        width: 97%;
+    }
 }

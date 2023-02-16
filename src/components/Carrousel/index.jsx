@@ -1,12 +1,14 @@
 import '../../styles/Carrousel.scss';
 import Arrow from '../../assets/arrow_back_ios-24px 2.png';
-//import image from '../../assets/illustration_grande.png';
 import { useState, useEffect } from 'react';
 
-
+/**
+ * Affiche une ou plusieurs images du logement à louer.
+ * @param {*} props.lists liste d'image à afficher. 
+ * @returns 
+ */
 function Carrousel(props) {
   var [imagesList, setImagesList] = useState([]);
-  //var [imageCurrent, setImageCurrent] = useState("");
   var [imageCount, setImageCount] = useState(0);
   var [imageCurrentNumber, setimageCurrentNumber] = useState(0);
   const [open, setOpen] = useState(false);
@@ -15,19 +17,16 @@ function Carrousel(props) {
     setImagesList(props.lists);
     setImageCount(imagesList.length);
     if(imageCount <= 1){
-      console.log("taille imageslist -> "+imageCount);
       setimageCurrentNumber(1);
       
     }else{
-      console.log("taille imageslist -> "+imageCount);
       setimageCurrentNumber(1);
       setOpen(true);
     }
   },[imageCount, imagesList.length, props.lists])
 
   
-  const carrousel = (choice) =>{
-    
+  const carrousel = (choice) =>{ 
     if(choice === 1){
       
       if(imageCurrentNumber === 1){
@@ -35,11 +34,8 @@ function Carrousel(props) {
   
       }else{
         setimageCurrentNumber(imageCurrentNumber-1);
-        
       }
       
-      console.log("choice -> "+choice);
-      console.log("imageCurrentNumber -> "+imageCurrentNumber);
     }else if(choice === 2){
       
       if(imageCurrentNumber === imageCount){
@@ -47,9 +43,6 @@ function Carrousel(props) {
       }else{
         setimageCurrentNumber(imageCurrentNumber+1);
       }
-      
-      console.log("choice -> "+choice);
-      console.log("imageCurrentNumber -> "+imageCurrentNumber);
     }
   }
 

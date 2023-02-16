@@ -56,8 +56,6 @@ function Logement() {
             function(data){ return data.id === id }
         );
 
-        console.log("id => "+cardId);
-
         if(logement[0]){
             setTitle(logement[0].title);
             setLocation(logement[0].location);

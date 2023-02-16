@@ -5,25 +5,25 @@
     width: 100%;
     height: 350px;
     position: relative;  
+    @media screen and (max-width: 768px){
+        height: 260px;
+        margin-top: 16px;
+    }
 }
 
 .Carrousel-image{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: $x-radius;
+    border-radius: $medium-radius;
 }
 
 .Carrousel-left-arrow{
+    @extend %arrow;
     transform: rotate(90deg);
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
 }
 .Carrousel-right-arrow{
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
+    @extend %arrow;
     transform: rotate(270deg);
 }
 
