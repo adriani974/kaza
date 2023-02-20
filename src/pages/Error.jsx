@@ -2,7 +2,10 @@ import '../styles/Error.scss';
 import { Link } from 'react-router-dom';
 const texte = "Oups ! la page que \n vous demandez n'existe pas.";
 
-
+/**
+ * Affiche une page d'erreur 404.
+ * @returns un ou plusieurs div.
+ */
 function Error() {
     return (
         <div className='Error'>

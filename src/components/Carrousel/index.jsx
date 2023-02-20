@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 /**
  * Affiche une ou plusieurs images du logement à louer.
  * @param {*} props.lists liste d'image à afficher. 
- * @returns 
+ * @returns un ou plusieurs div.
  */
 function Carrousel(props) {
   var [imagesList, setImagesList] = useState([]);

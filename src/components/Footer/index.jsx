@@ -3,7 +3,7 @@ import logo from '../../assets/logo-kaza-2.png';
 
 /**
  * Composant correspondant au pied de page du site
- * @returns 
+ * @returns un ou plusieurs div.
  */
 function Footer() {
     return (

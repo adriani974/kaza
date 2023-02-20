@@ -17,7 +17,7 @@ var reference = (state) =>{
  * @param {*} props.three la troisième étoile peut être afficher par true sinon ne s'affiche pas avec false. 
  * @param {*} props.four la quatrième étoile peut être afficher par true sinon ne s'affiche pas avec false. 
  * @param {*} props.five la cuinqième étoile peut être afficher par true sinon ne s'affiche pas avec false. 
- * @returns 
+ * @returns un ou plusieurs div. 
  */
 function Stars_rank(props) {
    

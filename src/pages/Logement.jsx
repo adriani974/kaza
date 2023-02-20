@@ -7,8 +7,7 @@ import Tags from '../components/Tags';
 import Dropdown from '../components/Dropdown'
 const logements = require('../datas/logements.json');
 
-
-
+//fonction retournant le composant Stars avec le nombre d'étoiles que cette dernière doit avoir. 
 const star_rank = (key) => {
     switch (key) {
         case 0:
@@ -33,7 +32,10 @@ const star_rank = (key) => {
             break;
     }
 }
-
+/**
+ * Affiche la page de logement.
+ * @returns un ou plusieurs div.
+ */
 function Logement() {
     const { id } = useParams();
     const [cardId, setCardId] = useState("");
@@ -51,11 +53,12 @@ function Logement() {
 
     useEffect(()=>{
         setCardId(id);
-    
+        //Je vérifie si l'id récupérer est aussi contenue dans la variable data.
         const logement = logements.filter(
             function(data){ return data.id === id }
         );
 
+        //Si le logement à été retrouver
         if(logement[0]){
             setTitle(logement[0].title);
             setLocation(logement[0].location);
@@ -74,7 +77,7 @@ function Logement() {
             setEquipements(equipement_texte);
             setPicturesList(logement[0].pictures)
            
-        }else{
+        }else{//Si le logement n'existe pas on renvoie l'utilisateur vers la page d'erreur 404.
             navigate('/error');  
         }
         

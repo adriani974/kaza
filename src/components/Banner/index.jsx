@@ -9,7 +9,7 @@ var nameBanner = null;
  * @param {*} props.choice permet de choisir l'image à afficher. 
  * @param {*} props.text affiche un texte sur l'image. 
  * @param {*} props.description donne une description de l'image. 
- * @returns 
+ * @returns un ou plusieurs div.
  */
 function Banner(props) {
   if(props.choice === 1){

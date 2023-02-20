@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
  * @param { * } props.link  L'identifiant du logement.
  * @param { * } props.cover L'image du logement.
  * @param { * } props.title Le nom du logement.
- * @returns 
+ * @returns un ou plusieurs div.
  */
 function Card(props) {
     return (

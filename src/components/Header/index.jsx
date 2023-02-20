@@ -5,7 +5,7 @@ import logo from '../../assets/logo-kaza-1.png';
 /**
  * 
  * Composant correspondant au header du site, contenant la navigation.
- * @returns 
+ * @returns un ou plusieurs div.
  */
 function Header() {
     return (

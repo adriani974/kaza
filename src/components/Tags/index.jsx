@@ -9,7 +9,7 @@ const tag = (list) => {
 /**
  * Affiche une liste de tags.
  * @param {*} props.list liste de tags à afficher. 
- * @returns 
+ * @returns un ou plusieurs div.
  */
 function Tags(props) {
     return (
