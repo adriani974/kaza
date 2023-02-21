@@ -1,9 +1,11 @@
 import '../../styles/Tags.scss';
+
+// Retourne un tag à partir du paramétre list.
 const tag = (list) => {
-    const autre = list.map((tag, index)=>
+    const oneTag = list.map((tag, index)=>
     <p key={index} className='Tags-text'>{tag}</p>
 );
-  return autre;
+  return oneTag;
 }
 
 /**
@@ -15,8 +17,7 @@ function Tags(props) {
     return (
         <div className='Tags'>  
             {tag(props.list)}
-        </div>
-        
+        </div>   
     )
 }
 

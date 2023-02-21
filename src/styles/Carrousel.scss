@@ -21,10 +21,16 @@
 .Carrousel-left-arrow{
     @extend %arrow;
     transform: rotate(90deg);
+    &:hover{
+        cursor: pointer;
+    }
 }
 .Carrousel-right-arrow{
     @extend %arrow;
     transform: rotate(270deg);
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .Carrousel-count{

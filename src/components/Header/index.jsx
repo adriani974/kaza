@@ -16,8 +16,7 @@ function Header() {
                 <Link className='Header-nav-acceuil' to="/">Accueil</Link>
                 <Link className='Header-nav-propos' to="/propos">A propos</Link>
             </nav>
-        </div>
-        
+        </div> 
     )
 }
 

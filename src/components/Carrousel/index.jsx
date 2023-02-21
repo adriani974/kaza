@@ -11,7 +11,7 @@ function Carrousel(props) {
   var [imagesList, setImagesList] = useState([]);
   var [imageCount, setImageCount] = useState(0);
   var [imageCurrentNumber, setimageCurrentNumber] = useState(0);
-  const [open, setOpen] = useState(false);
+  const [visibility, setVisibility] = useState(false);//Les flèches précedent et suivant sont invisible.
 
   useEffect(()=>{
     setImagesList(props.lists);
@@ -19,24 +19,23 @@ function Carrousel(props) {
     if(imageCount <= 1){
       setimageCurrentNumber(1);
       
-    }else{
+    }else{//Les flèches précedent et suivant sont visible.
       setimageCurrentNumber(1);
-      setOpen(true);
+      setVisibility(true);
     }
   },[imageCount, imagesList.length, props.lists])
 
-  
+  //Affiche l'image suivante ou précedente de la carrousel selon l'action de l'utilisateur.
   const carrousel = (choice) =>{ 
-    if(choice === 1){
+    if(choice === 1){//on affiche l'image précedent
       
       if(imageCurrentNumber === 1){
         setimageCurrentNumber(imageCount);
-  
       }else{
         setimageCurrentNumber(imageCurrentNumber-1);
       }
       
-    }else if(choice === 2){
+    }else if(choice === 2){//on affiche l'image suivant
       
       if(imageCurrentNumber === imageCount){
         setimageCurrentNumber(1);
@@ -48,11 +47,11 @@ function Carrousel(props) {
 
   return (
       <div className='Carrousel'>
-        {open && (
+        {visibility && (
         <div className='Carrousel-container'>
-          <img className='Carrousel-left-arrow' src={ Arrow } alt="fleche de gauche de la carrousel" onClick={ ()=> carrousel(1)}/>
+          <img className='Carrousel-left-arrow' src={ Arrow } alt="fleche de gauche de la carrousel permet de revenir à l'illustration précedente" onClick={ ()=> carrousel(1)}/>
           <p className='Carrousel-count'>{imageCurrentNumber+' / '+imageCount}</p>
-          <img className='Carrousel-right-arrow' src={ Arrow } alt="fleche de droite de la carrousel " onClick={()=> carrousel(2)}/>
+          <img className='Carrousel-right-arrow' src={ Arrow } alt="fleche de droite de la carrousel permet de passé à l'illustration suivante " onClick={()=> carrousel(2)}/>
         </div>)}
         <img className='Carrousel-image' src={ imagesList[imageCurrentNumber-1]  } alt="description "/> 
       </div>

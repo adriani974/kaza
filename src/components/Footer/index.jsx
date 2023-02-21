@@ -10,8 +10,7 @@ function Footer() {
         <div className='Footer'>  
             <img className='Footer-logo' src={ logo } alt="Logo Kaza"/>  
             <p className='Footer-text'> © 2020 Kasa. All rights reserved </p>
-        </div>
-        
+        </div>  
     )
 }
 

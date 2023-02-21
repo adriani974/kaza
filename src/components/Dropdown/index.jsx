@@ -21,8 +21,6 @@ function Dropdown(props) {
                 <img className='Dropdown-icon' src={ logo } alt="icon pour un dropdown" style={{transform: open ? 'rotate(180deg)' : ''}} onClick={dropdown}/> 
             </div>
             {open && (<div className='Dropdown-container-text'><p className='Dropdown-text'>{ props.text }</p></div>)}
-           
-            
         </div>  
     )
 }

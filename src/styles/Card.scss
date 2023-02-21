@@ -10,6 +10,9 @@
     background: $primary-color;
     margin: 6px;
     text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
     @media screen and (max-width: 768px){
         width: 100%;
         height: 260px;
@@ -23,13 +26,11 @@
     line-height: 142.6%;
     height: 30%;
     margin: 5px;
-    color: white;
-    
+    color: white; 
     @media screen and (max-width: 768px){
         margin: 20px;
         height: fit-content;
-    }
-    
+    }  
 }
 
 .Card-img {

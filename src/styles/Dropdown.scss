@@ -37,7 +37,10 @@
 
 .Dropdown-icon{
     margin-right: 20px;
-    :focus{
+    &:hover{
+        cursor: pointer;
+    }
+    &:focus{
         transform: rotate(90deg);
     }
 }
